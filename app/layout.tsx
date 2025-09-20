@@ -1,3 +1,4 @@
+import * as React from "react";
 export const metadata = { title: "Zelus Test" };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
