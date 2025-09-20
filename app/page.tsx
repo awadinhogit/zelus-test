@@ -21,7 +21,7 @@ export default function Home() {
     try {
       const isLocal = typeof window !== "undefined" &&
         (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1");
-      const apiUrl = isLocal ? "http://localhost:8000/" : "/api/calc";
+      const apiUrl = "/api/calc";
 
       const tokens = raw.replace(/,/g, " ").trim().split(/\s+/).filter(Boolean);
       const numbers = tokens.map(Number);
